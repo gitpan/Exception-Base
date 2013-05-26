@@ -83,7 +83,7 @@ This class implements a fully OO exception mechanism similar to
 L<Exception::Class> or L<Class::Throwable>.  It provides a simple interface
 allowing programmers to declare exception classes.  These classes can be
 thrown and caught.  Each uncaught exception prints full stack trace if the
-default verbosity is uppered for debugging purposes.
+default verbosity is increased for debugging purposes.
 
 The features of C<Exception::Base>:
 
@@ -125,7 +125,7 @@ interface)
 
 =item *
 
-easly expendable, see L<Exception::System> class for example
+easily expendable, see L<Exception::System> class for example
 
 =item *
 
@@ -154,10 +154,7 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '0.2401';
-
-use utf8;
-
+our $VERSION = '0.25';
 
 ## no critic qw(ProhibitConstantPragma RequireArgUnpacking RequireCarping RequireCheckingReturnValueOfEval RequireInitializationForLocalVars)
 
@@ -227,7 +224,7 @@ C<to_number> method.
 =item String context
 
 Content of attribute which is combined from C<string_attributes> attributes
-with additional informations, depended on C<verbosity> setting.  See
+with additional information, depended on C<verbosity> setting.  See
 C<to_string> method.
 
   eval { Exception::Base->throw( message=>"Message", value=>123 ) };
@@ -372,15 +369,15 @@ verbosity:
 
 =over 2
 
-=item 0
+=item C<0>
 
 Empty string
 
-=item 1
+=item C<1>
 
  Message
 
-=item 2
+=item C<2>
 
  Message at %s line %d.
 
@@ -388,7 +385,7 @@ The same as the standard output of die() function.  It doesn't include
 "at %s line %d." string if message ends with C<"\n"> character.  This is
 the default option.
 
-=item 3
+=item C<3>
 
  Class: Message at %s line %d
          %c_ = %s::%s() called in package %s at %s line %d
@@ -399,7 +396,7 @@ The output contains full trace of error stack without first C<ignore_level>
 lines and those packages which are listed in C<ignore_package> and
 C<ignore_class> settings.
 
-=item 4
+=item S<4>
 
 The output contains full trace of error stack.  In this case the
 C<ignore_level>, C<ignore_package> and C<ignore_class> settings are meaning
@@ -548,7 +545,7 @@ greater than 1.
 
 =item caller_stack (ro)
 
-Contains the error stack as array of array with informations about caller
+Contains the error stack as array of array with information about caller
 functions.  The first 8 elements of the array's row are the same as first 8
 elements of the output of C<caller> function.  Further elements are optional
 and are the arguments of called function.  Collected if the verbosity on
@@ -798,7 +795,7 @@ parameter and will have the version given in the argument.
 
 =item has
 
-The class will contain new rw attibute (if parameter is a string) or new rw
+The class will contain new rw attribute (if parameter is a string) or new rw
 attributes (if parameter is a reference to array of strings) or new rw or ro
 attributes (if parameter is a reference to hash of array of strings with rw
 and ro as hash key).
@@ -2204,7 +2201,7 @@ It doesn't collect system data and stack trace on error.
 
 =item L<Exception::Class>
 
-More perl-ish way to do OO exceptions.  It is similar to C<Exception::Base>
+More Perlish way to do OO exceptions.  It is similar to C<Exception::Base>
 module and provides similar features but it is 10x slower for failure
 scenario.
 
@@ -2221,7 +2218,7 @@ L<Exception::Class>.
 
 =item L<Exceptions>
 
-Not recommended.  Abadoned.  Modifies C<%SIG> handlers.
+Not recommended.  Abandoned.  Modifies C<%SIG> handlers.
 
 =item L<TryCatch>
 
@@ -2267,7 +2264,7 @@ convert simple L<perlfunc/warn> into an exception object.
 
 =head2 New exception classes
 
-The C<Exception::Base> module allows to create new exception classes easly.
+The C<Exception::Base> module allows to create new exception classes easily.
 You can use L<perlfunc/import> interface or L<base> module to do it.
 
 The L<perlfunc/import> interface allows to create new class with new
@@ -2300,7 +2297,7 @@ For more complex exceptions you can redefine C<ATTRS> constant.
 
 There are two scenarios for L<perlfunc/eval> block: success or failure.
 Success scenario should have no penalty on speed.  Failure scenario is usually
-more complex to handle and can be significally slower.
+more complex to handle and can be significantly slower.
 
 Any other code than simple C<if ($@)> is really slow and shouldn't be used if
 speed is important.  It means that any module which provides try/catch syntax
@@ -2348,7 +2345,10 @@ You can find the benchmark script in this package distribution.
 =head1 BUGS
 
 If you find the bug or want to implement new features, please report it at
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Exception-Base>
+L<https://github.com/dex4er/perl-Exception-Base/issues>
+
+The code repository is available at
+L<http://github.com/dex4er/perl-Exception-Base>
 
 =for readme continue
 
@@ -2358,7 +2358,7 @@ Piotr Roszatycki <dexter@cpan.org>
 
 =head1 LICENSE
 
-Copyright (c) 2007, 2008, 2009, 2010 Piotr Roszatycki <dexter@cpan.org>.
+Copyright (c) 2007-2010, 2012-2013 Piotr Roszatycki <dexter@cpan.org>.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

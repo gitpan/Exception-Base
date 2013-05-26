@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,28 +14,30 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 ef4e332d70902d4b7a108708fc02aece49913f8a Build.PL
-SHA1 021ceda3648dffb62b39a9a2063329b792fbf974 Changes
+SHA1 d30eac7bff2bddce1db3da74b59d369cd384af88 Build.PL
+SHA1 0161b4212df9836c0f2f1199be5cf5ac4a6244a6 Changes
 SHA1 9fc66bd603a4c3712c8a99ebc293a5b1fb93a558 Incompatibilities
-SHA1 da7d205cfd1b79b38c7a6d18ca55373470086825 LICENSE
-SHA1 39fc0d2ae2255d3deffb361dc622e95b64c09c14 MANIFEST
-SHA1 4e1b00d61265c6c39a6f571c0f61f74226005ffb MANIFEST.SKIP
-SHA1 8d9be252f842ca1ae52fef57824000abcd1d465c META.yml
-SHA1 d46346d89a4b6d673cd1019dec5f17bdc1847ccd Makefile.PL
-SHA1 2700576291e594c681fd5155b439bdfdfb310c1a README
-SHA1 d7d40bb798451e792f15d35a982d3c825edbffaf eg/die_propagate.pl
-SHA1 2c87f33181282c165edaf2d97f2d6860b36a7942 eg/eval_throw_given_when_default.pl
-SHA1 236bf6dbe47a773121388fa1063e3b3376c71f3b eg/eval_throw_if_elsif_else.pl
-SHA1 81396305b6d25128c23dc379b286ff99a16f2389 eg/file-not-found_exception.pl
-SHA1 92c82ef9cf175b34aa7b5358fea18310ca8a39de eg/ignore_package.pl
-SHA1 2c87f33181282c165edaf2d97f2d6860b36a7942 eg/try_catch.pl
-SHA1 ba8bd18d332c6059739006a11c8d683745432ca0 eg/try_tiny_try_catch_given_when.pl
-SHA1 3b9ef490f26d0dcc1e7e185bac1e02fc4ab06ff3 eg/trycatch_try_catch_given_when.pl
-SHA1 597999789e1945c3781bcb71b90b5d91b99b0844 eg/trycatch_try_catch_where.pl
-SHA1 8df7584bd1c24ff2b5d3b020636355e2a4744f2f lib/Exception/Base.pm
+SHA1 a174928e84308ecca1e244fda30c56960b1e31e2 LICENSE
+SHA1 3495a0b73bdf5710ea8cccb1f91c42ca5502a969 MANIFEST
+SHA1 86fb54c8932787c88ad623cf4792182853eeca85 MANIFEST.SKIP
+SHA1 c251ad62bfd3a0012fe2014c78c27dab2eecdf5b META.json
+SHA1 80c3d1c8117b60cbe14154dc7d3ac3c9878b1c1e META.yml
+SHA1 6b6a7bfe7b9c80dc2abcf1c5598555db17303d94 Makefile.PL
+SHA1 d97be63bb80d697e75b550ab6fd09d9c6e128f66 README
+SHA1 c52336749a8191c0f8532759a02fd4793e99ecc6 README.md
+SHA1 d7d40bb798451e792f15d35a982d3c825edbffaf examples/die_propagate.pl
+SHA1 2c87f33181282c165edaf2d97f2d6860b36a7942 examples/eval_throw_given_when_default.pl
+SHA1 236bf6dbe47a773121388fa1063e3b3376c71f3b examples/eval_throw_if_elsif_else.pl
+SHA1 81396305b6d25128c23dc379b286ff99a16f2389 examples/file-not-found_exception.pl
+SHA1 92c82ef9cf175b34aa7b5358fea18310ca8a39de examples/ignore_package.pl
+SHA1 2c87f33181282c165edaf2d97f2d6860b36a7942 examples/try_catch.pl
+SHA1 ba8bd18d332c6059739006a11c8d683745432ca0 examples/try_tiny_try_catch_given_when.pl
+SHA1 3b9ef490f26d0dcc1e7e185bac1e02fc4ab06ff3 examples/trycatch_try_catch_given_when.pl
+SHA1 597999789e1945c3781bcb71b90b5d91b99b0844 examples/trycatch_try_catch_where.pl
+SHA1 16b7d6fa391eff4119a405a570be6c2c4d4b00ac lib/Exception/Base.pm
 SHA1 c21578f4a722dbe8e302a27deaaa2ce5f68c5f9b t/all_tests.t
 SHA1 7fd6e2397259525641d03b6c8199b4e4c0e2dda7 t/test.pl
-SHA1 362e5b9a5f001a530b75f67c9509f1d60bd7de0c t/tlib/Exception/BaseTest.pm
+SHA1 bde638afcba7cad2d37c937ece9bc958f1531b79 t/tlib/Exception/BaseTest.pm
 SHA1 bb82949c3477e9bb9076f2c94a3f5b3ab1cf2c13 t/tlib/Exception/BaseTest/LoadedException.pm
 SHA1 e1f0ce1a6f86fd8217e5bdb2a800dccf2258d60c t/tlib/Exception/BaseTest/MissingVersion.pm
 SHA1 b8f9777c0a7937d604a7c09651ccb535b47df1b4 t/tlib/Exception/BaseTest/PurePackage.pm
@@ -44,24 +46,31 @@ SHA1 607c42070c6148049dbfc37353be60a7aedaf0fc xt/benchmark.pl
 SHA1 f871a7efeb59ed4790d35e9f84ec95c5a0951487 xt/benchmark_fail.pl
 SHA1 f4caa505b58b645e503948c69f99a16b870f3d9d xt/benchmark_ok.pl
 SHA1 90353a99ac0f719b6f3e58029804d8556cedc2ab xt/check_changes.t
-SHA1 a56d0c02b6c992e04a77d13a6ee89504bd718572 xt/consistent_version_numbers.t
+SHA1 1c27e5840b0154e44120bc2edc02fbb507c76819 xt/consistent_version_numbers.t
 SHA1 67bb4c141ea95809f3db2d526ce91d9e6d894756 xt/copyright.t
 SHA1 650dccfa9b6f5a98cf731c89041bea8935dbc623 xt/cover.pl
+SHA1 e6cd4b4bbadcfddd26f7f2fa3c6b48339be8343f xt/cpan_changes.t
+SHA1 4f8f90e1c421bfd592e6806ec4d0a75f3d56406a xt/cpan_meta.t
+SHA1 48a67f01c35122165bb633264cba72d984d7a89e xt/dist_manifest.t
 SHA1 f5aac658ae1888964274e68d179413782082b7ad xt/distribution.t
+SHA1 af47b82dbac975ba494dfe6849d17d1e02941ac6 xt/eol.t
 SHA1 44147122d52fef90ab3a2c65ebba4f89342174f8 xt/kwalitee.t
+SHA1 6e7f9dde7560793bcb40acc41561e07d163ad6d1 xt/minimumversion.t
+SHA1 1a1cd76027c4cc73ec56beadaf56680bbac1fd4a xt/no_tabs.t
 SHA1 e8daa0c73cfc304c240fad2d2c2b1b628175a89d xt/perlcritic.t
-SHA1 94d270cae080a04224cdf80c2ac95026c3e850c6 xt/perlcriticrc
+SHA1 0b7354108fb0d5e5637aef789d5378d0a6ad30a0 xt/perlcriticrc
 SHA1 2c579b58def8daec94f41b628ac81c256faaa2b1 xt/pod.t
-SHA1 775b3ac02805b6d703614f42608732fb43af2a41 xt/pod_coverage.t
+SHA1 46aa111935ff192343c30b72d28da1a71ef4abf0 xt/pod_coverage.t
 SHA1 bef7d46eb5cbc3e67956d4e823ec199f41ab9268 xt/pod_spell.t
-SHA1 1fce20056a3d9d948bf671c1100bf13ad68984c7 xt/pod_spellrc
-SHA1 2c579b58def8daec94f41b628ac81c256faaa2b1 xt/pod_syntax.t
-SHA1 24306b8361154c849931d2d83e9d2a1b7bdfdf7b xt/profile_eval.pl
+SHA1 1f5c0289a9fb4a887572dd912c6fc5a629fbef41 xt/pod_spellrc
+SHA1 87cb53d4ad0162a872d5c70013fc41719e030555 xt/pod_syntax.t
+SHA1 f2dd15ffc2836703f46f2622702e1676891eed21 xt/portability_files.t
+SHA1 a79828d763b5aa2cc4bcf36ffb7d7879d3e9b7fd xt/profile_eval.pl
 SHA1 a38994922fda6d64e2ee75198fadc464a221fea9 xt/signature.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1.4.12 (GNU/Linux)
 
-iEYEARECAAYFAkyl4AgACgkQhMHHe8CxClugXwCgtw6pWcjPGcd4fMVj0sm2fcYW
-nj0AoJfk66xswLZ/aIJwO4abarUm2plM
-=wD9M
+iEYEARECAAYFAlGh0V0ACgkQhMHHe8CxCls25ACfX+V3GvJdKQZXF88d0MVbtQ/o
+fUwAoOS/LnZYT1AOhvWTNNB6fsiBTLRr
+=vbQu
 -----END PGP SIGNATURE-----
